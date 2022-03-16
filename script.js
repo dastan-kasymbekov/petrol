@@ -26,16 +26,19 @@ const inputAI95 = document.querySelector("#ai95")
 const inputAI98 = document.querySelector("#ai98")
 const inputAI100 = document.querySelector("#ai100")
 const totalInput = document.querySelector('.total--input')
+
 function change() {
     document.querySelector('.bill--subtitle__liters').textContent = `${totalInput.value}L`
     document.querySelector('.bill--subtitle__price').textContent = `${inputAI95.value}$`
     document.querySelector('.total--price').textContent = `Total price: ${Math.round(inputAI95.value * totalInput.value + inputAI95.value * totalInput.value * vat)}$`
 }
+
 function change2() {
     document.querySelector('.bill--subtitle__liters').textContent = `${totalInput.value}L`
     document.querySelector('.bill--subtitle__price').textContent = `${inputAI98.value}$`
     document.querySelector('.total--price').textContent = `Total price: ${Math.round(inputAI98.value * totalInput.value + inputAI95.value * totalInput.value * vat)}$`
 }
+
 function change3() {
     document.querySelector('.bill--subtitle__liters').textContent = `${totalInput.value}L`
     document.querySelector('.bill--subtitle__price').textContent = `${inputAI100.value}$`
