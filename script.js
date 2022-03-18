@@ -36,13 +36,13 @@ function change() {
 function change2() {
     document.querySelector('.bill--subtitle__liters').textContent = `${totalInput.value}L`
     document.querySelector('.bill--subtitle__price').textContent = `${inputAI98.value}$`
-    document.querySelector('.total--price').textContent = `Total price: ${Math.round(inputAI98.value * totalInput.value + inputAI95.value * totalInput.value * vat)}$`
+    document.querySelector('.total--price').textContent = `Total price: ${Math.round(inputAI98.value * totalInput.value + inputAI98.value * totalInput.value * vat)}$`
 }
 
 function change3() {
     document.querySelector('.bill--subtitle__liters').textContent = `${totalInput.value}L`
     document.querySelector('.bill--subtitle__price').textContent = `${inputAI100.value}$`
-    document.querySelector('.total--price').textContent = `Total price: ${Math.round(inputAI100.value * totalInput.value + inputAI95.value * totalInput.value * vat)}$`
+    document.querySelector('.total--price').textContent = `Total price: ${Math.round(inputAI100.value * totalInput.value + inputAI100.value * totalInput.value * vat)}$`
 }
 
 
